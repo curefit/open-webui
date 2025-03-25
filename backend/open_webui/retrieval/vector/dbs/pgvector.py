@@ -63,7 +63,7 @@ class PgvectorClient:
 
         try:
             # Ensure the pgvector extension is available
-            self.session.execute(text("CREATE EXTENSION IF NOT EXISTS vector;"))
+            # self.session.execute(text("CREATE EXTENSION IF NOT EXISTS vector;"))
 
             # Check vector length consistency
             self.check_vector_length()
